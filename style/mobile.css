@@ -1,0 +1,12 @@
+* {
+  border: 2px solid black;
+}
+
+body{
+  /*max-width: 100%;*/
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
