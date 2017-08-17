@@ -1,12 +1,26 @@
 * {
   border: 2px solid black;
 }
-
-body{
-  /*max-width: 100%;*/
-  margin: 0 auto;
+.menu img {
+  width: 10%;
+  position:absolute;
+  right: 2%;
+  margin-top: 1.5%;
 }
-
-img{
+#name{
+  float: left;
+}
+.hero img {
   max-width: 100%;
+  padding-top: 20px;
+}
+.nav {
+  display: none;
+}
+main {
+  margin-top: 10px;
+}
+#name{
+  margin-top: 1%;
+  margin-left:1%;
 }
