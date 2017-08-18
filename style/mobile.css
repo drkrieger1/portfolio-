@@ -26,8 +26,20 @@ img {
   max-width: 100%;
 }
 .nav {
+  width: 50%;
+  border:2px solid blue;
+  display: block;
+  position:fixed;
+  right: 5px;
+  margin-top: 30px;
   display: none;
 }
+.nav li {
+  font-size: 1.5em;
+  background-color: red;
+  border: 1px solid red;
+}
+
 .clearFix{
   clear:both;
 }
@@ -38,7 +50,6 @@ img {
 }
 
 .project-menu li {
-
   display: inline;
 }
 .project-menu img {
