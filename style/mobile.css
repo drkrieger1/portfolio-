@@ -1,26 +1,59 @@
 * {
   border: 2px solid black;
 }
-.menu img {
-  width: 10%;
-  position:absolute;
+main{
+  max-width: 960px;
+  margin: 0 auto;
+}
+#header {
+  border: 2px solid red;
+}
+
+ #menu{
+  width: 23px;
+  border: 2px solid red;
+  position:fixed;
   right: 2%;
-  margin-top: 1.5%;
 }
 #name{
-  float: left;
+  width: 20%;
+  font-size: 2em;
+  float:left;
+  border: 2px solid green;
+
 }
-.hero img {
+img {
   max-width: 100%;
-  padding-top: 20px;
 }
 .nav {
+  width: 50%;
+  border:2px solid blue;
+  display: block;
+  position:fixed;
+  right: 5px;
+  margin-top: 30px;
   display: none;
 }
-main {
-  margin-top: 10px;
+.nav li {
+  font-size: 1.5em;
+  background-color: red;
+  border: 1px solid red;
 }
-#name{
-  margin-top: 1%;
-  margin-left:1%;
+
+.clearFix{
+  clear:both;
+}
+.projects{
+  width: 100%;
+  margin: 0 auto;
+  border:2px solid red;
+}
+
+.project-menu li {
+  display: inline;
+}
+.project-menu img {
+}
+.project-menu {
+  width: 25%;
 }
