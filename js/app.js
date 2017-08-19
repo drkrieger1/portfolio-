@@ -1,7 +1,7 @@
 'use strict';
 
 //------img container
-var imgs = ['img/cat.jpg','img/dog.jpg','img/dog2.jpg'];
+var imgs = ['img/shark.jpg','img/us1.jpg','img/us2.jpg','img/paintball.jpg','img/fires.jpg'];
 
 var features = {};
 var index = 0;
@@ -20,7 +20,7 @@ features.imgSlider = function(){
   $('#button-right').click(function(e){
     e.preventDefault();
     index++;
-    console.log('click made');
+
     $('#hero-img').hide();
     if(index === imgs.length){
       index = 0;
@@ -28,7 +28,7 @@ features.imgSlider = function(){
     $('#hero-img').attr('src', imgs[index]);
     $('#hero-img').fadeIn('easing');
   });
-  console.log('slider loaded..');
+
   $('#button-left').click(function(e){
     e.preventDefault();
     if(index === 0){
@@ -40,8 +40,6 @@ features.imgSlider = function(){
     $('#hero-img').fadeIn('easing');
   });
 };
-
-
 
 $(document).ready(function(){
   features.imgPopulator();
