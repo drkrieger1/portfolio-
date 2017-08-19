@@ -29,6 +29,16 @@ features.imgSlider = function(){
     $('#hero-img').fadeIn('easing');
   });
   console.log('slider loaded..');
+  $('#button-left').click(function(e){
+    e.preventDefault();
+    if(index === 0){
+      index = imgs.length;
+    };
+    $('#hero-img').hide();
+    index--;
+    $('#hero-img').attr('src', imgs[index]);
+    $('#hero-img').fadeIn('easing');
+  });
 };
 
 
