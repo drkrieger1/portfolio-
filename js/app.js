@@ -1,8 +1,17 @@
 'use strict';
 
-$(document).ready(function(){
+//---img slider---
+var imgs = ['img/cat.jpg','img/dog.jpg','img/dog.jpg'];
+
+var features = {};
+
+features.navDropDown = function(){
   $('#menu').click(function(){
     $('ul.nav').slideToggle('slow');
-    console.log('click');
   });
+};
+
+
+$(document).ready(function(){
+  features.navDropDown();
 });

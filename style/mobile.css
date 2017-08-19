@@ -10,7 +10,7 @@ main{
 }
 
  #menu{
-  width: 23px;
+  width: 3em;
   border: 2px solid red;
   position:fixed;
   right: 2%;
@@ -31,7 +31,7 @@ img {
   display: block;
   position:fixed;
   right: 5px;
-  margin-top: 30px;
+  margin-top: 55px;
   display: none;
 }
 .nav li {
@@ -48,15 +48,23 @@ img {
   margin: 0 auto;
   border:2px solid red;
 }
-
+.projects h2{
+  font-size: 1.5em;
+}
+.project-menu{
+  text-align: center;
+}
 .project-menu li {
   display: inline;
-}
-.project-menu img {
-}
-.project-menu {
-  width: 25%;
+  margin: 1em;
 }
 .hero {
   margin: 0 auto;
+  text-align: center;
+}
+#skill-1{
+  float:left;
+}
+.skills ul{
+  text-align: center;
 }
