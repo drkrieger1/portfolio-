@@ -68,3 +68,6 @@ img {
 .skills ul{
   text-align: center;
 }
+.about, .projects{
+  display: none;
+}
