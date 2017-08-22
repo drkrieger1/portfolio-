@@ -10,40 +10,50 @@
   </head>
   <body>
     <div id="header">
-      <h1 id="name">First Last</h1>
+      <h1 id="name">Erik Plyushko</h1>
       <img id="menu"src="menu.png">
       <ul class="nav">
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">About</a></li>
+        <li><a id="project" href="#">Project</a></li>
+        <li><a id="gitHub" href="https://github.com/drkrieger1">Github</a></li>
+        <li><a id="about" href="#">About</a></li>
       </ul>
       <div class="clearFix"></div>
     </div>
 
-    <aside class="hero">
-      <img src="http://via.placeholder.com/960x450">
-    </aside>
+    <div class="hero">
+      <img id="hero-img" src="">
+      <button id="button-left" type="button">left</button>
+      <button id="button-right"type="button">Right</button>
+
+    </div>
     <main>
-      <section class="projects">
-        <h2>Projects</h2>
-          <!-- <img src="http://via.placeholder.com/323x250">
-          <img src="http://via.placeholder.com/323x250">
-          <div class="clearfix"></div> -->
-          <ul class="project-menu">
-          <li><img src="http://via.placeholder.com/235x250"></li>
-          <li><img src="http://via.placeholder.com/235x250"></li>
-        </ul>
-      </section>
+      <div class="canvas">
+        <article class="about">
+          <h1>About</h1>
+          <p>This is my story, ... im still working on it.</p>
+        </article>
+        <section class="projects">
+          <h2>Projects</h2>
+            <ul class="project-menu">
+            <li><img src="http://via.placeholder.com/235x250"></li>
+            <li><img src="http://via.placeholder.com/235x250"></li>
+            <li><img src="http://via.placeholder.com/235x250"></li>
+          </ul>
+        </section>
+    </div>
       <section class="skills">
         <h2>skills</h2>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-          <li>item 6</li>
+        <ul id="skill-1">
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
         </ul>
+        <ul id="skill-2">
+          <li>item4</li>
+          <li>item5</li>
+          <li>item6</li>
+        </ul>
+        <div class="clearFix"></div>
       </section>
       <footer><p>this is a footer</p></footer>
     </main>
