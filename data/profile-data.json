@@ -1,16 +1,4 @@
-[
+
   {
-    "bio": "This is my bio",
-    "skill": "<ul id=\"skill-1\">
-      <li>Javascript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-    <ul id=\"skill-2\">
-      <li>item4</li>
-      <li>item5</li>
-      <li>item6</li>
-    </ul>
-    <div class=\"clearFix\"></div>"
+    "about": "This is my bio"
   }
-]
