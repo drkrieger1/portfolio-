@@ -53,6 +53,12 @@ features.imgSlider = function(){
     $('#hero-img').fadeIn('easing');
   });
 };
+features.initIndex = function(){
+  Portfolio.all.forEach(function(portfolio){
+    $('.about').append(portfolio.toHtml());
+    $('.skills').append(portfolio.toHtml2());
+  });
+};
 
 $(document).ready(function(){
   features.imgPopulator();
