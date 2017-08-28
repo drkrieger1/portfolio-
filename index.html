@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="vendor/reset.css">
     <link rel="stylesheet" href="style/mobile.css">
     <link type="text/css" rel="stylesheet" href="style/modules.css">
+//--------------- Template------------------>
+    <script id="about-template" type="text/x-handlebars-template">
+        <h1>About</h1>
+        <p>{{bio}}</p>
+    </script>
+    <script id="skills-template" type="text/x-handlebars-template">
+      <h2>skills</h2>
+      {{{skills}}}
+    </script>
   </head>
   <body>
     <div id="header">
@@ -29,8 +38,8 @@
     <main>
       <div class="canvas">
         <article class="about">
-          <h1>About</h1>
-          <p>This is my story, ... im still working on it.</p>
+          <!-- <h1>About</h1>
+          <p>This is my story, ... im still working on it.</p> -->
         </article>
         <section class="projects">
           <h2>Projects</h2>
@@ -42,7 +51,7 @@
         </section>
     </div>
       <section class="skills">
-        <h2>skills</h2>
+        <!-- <h2>skills</h2>
         <ul id="skill-1">
           <li>Javascript</li>
           <li>HTML</li>
@@ -53,11 +62,16 @@
           <li>item5</li>
           <li>item6</li>
         </ul>
-        <div class="clearFix"></div>
+        <div class="clearFix"></div> -->
       </section>
       <footer><p>this is a footer</p></footer>
     </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+   <script type="text/javascript" src="js/loadData.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script>
+    Portfolio.fetchAll();
+  </script>
   </body>
 </html>
