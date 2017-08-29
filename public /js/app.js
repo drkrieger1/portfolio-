@@ -12,18 +12,18 @@ features.navDropDown = function(){
   });
 };
 //---------Nav handler------------
-features.selections = function(){
-  $('#project').on('click', function(){
-    $('.about').hide();
-    $('.projects').show(function(){
-    });
-  });
-  $('#about').on('click', function(){
-    $('.projects').hide();
-    $('.about').show(function(){
-    });
-  });
-};
+// features.selections = function(){
+//   $('#project').on('click', function(){
+//     $('.about').hide();
+//     $('.projects').show(function(){
+//     });
+//   });
+//   $('#about').on('click', function(){
+//     $('.projects').hide();
+//     $('.about').show(function(){
+//     });
+//   });
+// };
 //--------Img Population-------
 features.imgPopulator = function(){
   $('#hero-img').attr('src', imgs[index]);
@@ -54,7 +54,7 @@ features.imgSlider = function(){
   });
 };
 features.initIndex = function(){
-  Portfolio.all.forEach(function(portfolio){
+  Portfolio.all(function(portfolio){
     $('.about').append(portfolio.toHtml());
   });
 };
