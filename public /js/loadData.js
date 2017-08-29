@@ -2,14 +2,9 @@
 
 function Portfolio (rawDataObject){
   this.bio = rawDataObject.about;
-  this.skills = rawDataObject.skill;
   this.toHtml = function (){
     var template = Handlebars.compile($('#about-template').text());
     return template(this);
-  };
-  this.toHtml2 = function(){
-    var template2 = Handlebars.compile($('#skill-template').text());
-    return template2(this.skills);
   };
 }
 

@@ -56,11 +56,20 @@ features.imgSlider = function(){
 features.initIndex = function(){
   Portfolio.all.forEach(function(portfolio){
     $('.about').append(portfolio.toHtml());
-    $('.skills').append(portfolio.toHtml2());
+  });
+};
+features.stickyNav = function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() >= 10){
+      $('.header').attr('stickytop');
+    }else{
+      $('.stickytop').attr('sticktop');
+    }
   });
 };
 
 $(document).ready(function(){
+  features.stickyNav();
   features.imgPopulator();
   features.imgSlider();
   features.navDropDown();
