@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <meta name=“viewport” content=“width=device-width, initial-scale=1”>
-    <link rel="stylesheet" href="vendor/reset.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <link type="text/css" rel="stylesheet" href="style/modules.css">
+    <link rel="stylesheet" href="/vendor/reset.css">
+    <link rel="stylesheet" href="/style/mobile.css">
+    <link type="text/css" rel="stylesheet" href="/style/modules.css">
 
     <script id="about-template" type="text/x-handlebars-template">
         <h1>About</h1>
@@ -68,8 +68,13 @@
     </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-   <script type="text/javascript" src="js/loadData.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script type="text/javascript" src="/js/loadData.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+
+  <script type="text/javascript" src="/js/aboutController.js"></script>
+  <script type="text/javascript" src="/js/projectsController.js"></script>
+  <script type="text/javascript" src="/js/routes.js"></script>
   <script>
     Portfolio.fetchAll();
   </script>
