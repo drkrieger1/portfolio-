@@ -2,7 +2,7 @@
 
 const aboutController = {};
 
-Portfolio.fetchAll();
+// Portfolio.fetchAll(features.initIndex);
 
 aboutController.init = function() {
   $('.projects').hide();

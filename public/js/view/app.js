@@ -73,5 +73,5 @@ $(document).ready(function(){
   features.imgPopulator();
   features.imgSlider();
   features.navDropDown();
-  features.selections();
+  // features.selections();
 });
