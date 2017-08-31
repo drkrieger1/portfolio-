@@ -11,19 +11,7 @@ features.navDropDown = function(){
     $('ul.nav').slideToggle('slow');
   });
 };
-//---------Nav handler------------
-// features.selections = function(){
-//   $('#project').on('click', function(){
-//     $('.about').hide();
-//     $('.projects').show(function(){
-//     });
-//   });
-//   $('#about').on('click', function(){
-//     $('.projects').hide();
-//     $('.about').show(function(){
-//     });
-//   });
-// };
+
 //--------Img Population-------
 features.imgPopulator = function(){
   $('#hero-img').attr('src', imgs[index]);
@@ -55,7 +43,6 @@ features.imgSlider = function(){
 };
 features.initIndex = function(){
   Portfolio.all.forEach(function(portfolio){
-    console.log('???');
     $('.about').append(portfolio.toHtml());
   });
 };
@@ -74,5 +61,4 @@ $(document).ready(function(){
   features.imgPopulator();
   features.imgSlider();
   features.navDropDown();
-  // features.selections();
 });
