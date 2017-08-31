@@ -4,7 +4,8 @@
   "description": "profolio",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "express-request-proxy": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
