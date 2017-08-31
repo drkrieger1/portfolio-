@@ -16,9 +16,8 @@ var app = app || {};
       }
     })
     .then(
-    data => data.forEach(function(ele) {repos.all.push(ele)}),
-    err => console.error(err))
-    .then(callback)
+      data => {console.log('ajax to github');data.forEach(function(ele) {repos.all.push(ele)});callback()},
+      err => console.error(err))
     };
 
   repos.with = attr => repos.all.filter(repo => repo[attr]);

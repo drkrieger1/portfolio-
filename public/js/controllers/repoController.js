@@ -4,7 +4,7 @@ var app = app || {};
 (function(module) {
   const repoController = {};
 
-  repoController.index = () => {
+  repoController.init = () => {
     $('#gitRepo').show().siblings().hide();
 
     app.repos.requestRepos(app.repoView.index);

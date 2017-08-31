@@ -54,7 +54,8 @@ features.imgSlider = function(){
   });
 };
 features.initIndex = function(){
-  Portfolio.all(function(portfolio){
+  Portfolio.all.forEach(function(portfolio){
+    console.log('???');
     $('.about').append(portfolio.toHtml());
   });
 };
