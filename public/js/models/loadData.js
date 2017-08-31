@@ -28,7 +28,7 @@ Portfolio.fetchAll = function(){
       console.log('json data ' + rawData);
       Portfolio.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
-      features.initIndex();
+      // features.initIndex();
     },function(err){
       console.log(err);
     });
