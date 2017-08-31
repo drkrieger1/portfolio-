@@ -5,6 +5,6 @@ const projectsController = {};
 // Portfolio.fetchAll(features.initIndex);
 
 projectsController.init = function() {
-  $('.about').hide();
-  $('.projects').show();
+  $('.about, #gitRepo').hide();
+  $('.projects').toggle();
 }

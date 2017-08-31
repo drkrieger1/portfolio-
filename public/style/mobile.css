@@ -69,6 +69,6 @@ img {
 .skills ul{
   text-align: center;
 }
-.about, .projects{
-  /*display: none;*/
+.about, .projects, #gitRepo{
+  display: none;
 }

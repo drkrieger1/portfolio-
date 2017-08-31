@@ -5,7 +5,8 @@ var app = app || {};
   const repoController = {};
 
   repoController.init = () => {
-    $('#gitRepo').show().siblings().hide();
+    $('.about, .projects, #gitRepo').hide();
+    $('#gitRepo').toggle().siblings('slow');
 
     app.repos.requestRepos(app.repoView.index);
   };
