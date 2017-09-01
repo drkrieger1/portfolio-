@@ -17,8 +17,12 @@
     margin: 1em;
 
   }
-  #stickytop {
+  .header {
+    background-color: #677077;
+    width: 100%;
+    border:2px solid pink;
+    display: block;
+    margin: 0 auto;
     position:fixed;
-    top:0
+    top:0px;
   }
-}

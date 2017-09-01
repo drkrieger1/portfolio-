@@ -46,18 +46,8 @@ features.initIndex = function(){
     $('.about').append(portfolio.toHtml());
   });
 };
-features.stickyNav = function(){
-  $(window).scroll(function(){
-    if($(this).scrollTop() >= 10){
-      $('.header').attr('stickytop');
-    }else{
-      $('.stickytop').attr('sticktop');
-    }
-  });
-};
 
 $(document).ready(function(){
-  features.stickyNav();
   features.imgPopulator();
   features.imgSlider();
   features.navDropDown();

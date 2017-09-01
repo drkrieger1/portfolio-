@@ -12,11 +12,10 @@ Portfolio.all = [];
 
 
 Portfolio.loadAll = function(rawData){
-  // rawData.forEach(function(ele){
-  //   Portfolio.all.push(new Portfolio(ele));
+
   Portfolio.all.push(new Portfolio(rawData));
 };
-// };
+
 
 Portfolio.fetchAll = function(){
   if(localStorage.rawData){
@@ -28,7 +27,6 @@ Portfolio.fetchAll = function(){
       console.log('json data ' + rawData);
       Portfolio.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
-      // features.initIndex();
     },function(err){
       console.log(err);
     });
