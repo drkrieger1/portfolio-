@@ -6,7 +6,7 @@ main{
   margin: 0 auto;
 }
 .header {
-  background-color: #b5b5b7;
+  background-color: #677077;
 }
 
  #menu{
@@ -18,7 +18,9 @@ main{
   width: 20%;
   font-size: 2em;
   float:left;
-  color: #252839;
+  color: #f2b632;
+  font-weight: bold;
+  margin-left: 5px;
   font-family: 'Poppins', sans-serif;
 
 }
@@ -72,6 +74,7 @@ img {
   margin: 1em;
 }
 .hero {
+  margin-top: 40px;
   margin: 0 auto;
   text-align: center;
 }
@@ -83,4 +86,8 @@ img {
 }
 .about, .projects, #gitRepo{
   display: none;
+}
+.navFix{
+  width: 100%;
+  hight: 400px;
 }
